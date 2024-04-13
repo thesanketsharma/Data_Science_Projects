@@ -7,7 +7,7 @@ conda init
 #restart terminal
 
 #installing rapids
-conda create --solver=libmamba -n rapids-24.04 -c rapidsai -c conda-forge -c nvidia  \
+conda create --solver=libmamba -n gpuenv -c rapidsai -c conda-forge -c nvidia  \
     rapids=24.04 python=3.11 cuda-version=12.0 \
     dask-sql jupyterlab dash graphistry tensorflow xarray-spatial pytorch
 
